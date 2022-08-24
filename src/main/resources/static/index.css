@@ -1,0 +1,21 @@
+.left{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    float: left;
+}
+.right{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    float: right;
+}
+.keyword{
+
+}
+.add-content{
+
+}
+.data-units{
+
+}
