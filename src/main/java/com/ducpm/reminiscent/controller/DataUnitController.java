@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/dataUnits")
+@RequestMapping("/unit")
 public class DataUnitController {
     @RequestMapping("/add")
     private String add(){

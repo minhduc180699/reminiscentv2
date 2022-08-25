@@ -1,6 +1,7 @@
 package com.ducpm.reminiscent.service;
 
 import com.ducpm.reminiscent.model.DataUnit;
+import com.ducpm.reminiscent.model.response.DataResponse;
 import com.ducpm.reminiscent.mongodb.MongodbConnection;
 import com.mongodb.client.MongoCollection;
 import lombok.Data;
@@ -18,8 +19,10 @@ public class Storage {
     public void saveDataUnits(List<DataUnit> dataUnits){
 
     }
-    public void saveDataUnit(DataUnit dataUnit){
+    public DataResponse saveDataUnit(DataUnit dataUnit){
+        DataResponse response = new DataResponse(0);
         dataCollection.insertOne(dataUnit);
+        return response;
     }
     public void findDataUnitsByKeyword(List<String> keywords){
         Document document = new Document("keyword","");
